@@ -4,6 +4,8 @@ import SignupForm from './SignupForm';
 import LoginForm from './LoginForm';
 
 function Template({title,desc1, desc2, image, formtype, setIsLoggedIn}) {
+    console.log("form type");
+    console.log(formtype);
   return (
     <div>
 
@@ -16,12 +18,12 @@ function Template({title,desc1, desc2, image, formtype, setIsLoggedIn}) {
             </p>
 
             {formtype === "signup" ?
-            (<SignupForm setIsLoggedIn={setIsLoggedIn}/>) : (<LoginForm LoginForm={LoginForm}/>)
+            (<SignupForm setIsLoggedIn={setIsLoggedIn}/>) : (<LoginForm setIsLoggedIn={setIsLoggedIn}/>)
             }
 
             <div>
                 <div> </div> 
-                <p>or</p>
+                <p>OR</p>
                 <div></div>          
             </div>
 
