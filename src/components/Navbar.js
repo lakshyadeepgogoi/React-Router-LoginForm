@@ -18,8 +18,8 @@ function Navbar(props) {
             <img src={logo} alt='Logo' width={160} height={32} loading='lazy' />
         </Link>
 
-        <nav className='hidden md:block'>
-            <ul className='flex gap-x-6 text-richblack-100'>
+        <nav className='hidden md:block '>
+            <ul className='flex flex-wrap gap-x-6 text-richblack-100'>
                 <li>
                     <Link to="/">Home</Link>
                 </li>
@@ -33,8 +33,8 @@ function Navbar(props) {
         </nav>
 
         {/* Login - SignUp - LogOut - Dashboard */}
-        <div className='md:flex items-center gap-x-4 hidden' >
-            <button className='md:hidden r-4'>
+        <div className='md:flex items-center gap-x-4 ' >
+            <button className=' r-4'>
                 <svg svg stroke="currentColor" fill="#AFB2BF" stroke-width="0" viewBox="0 0 1024 1024" font- size="24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"> 
                     <path d="M904 160H120c-4.4 0-8 3.6-8 Bv64c8 4.4 3.6 8 8 8h784c4.4 @ 8-3.6 8-8v-64c8-4. 4-3.6-8-8-8zme 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 @ 8-3.6 8-8v-64c8- 4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c8 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c8 -4.4-3.6-8-8-82"></path>
                 </svg>
