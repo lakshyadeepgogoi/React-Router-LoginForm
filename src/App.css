@@ -6,3 +6,8 @@ html,
 body {
     overflow-x: hidden;
 }
+
+
+.value{
+    box-shadow: rgba(255, 255, 255, 0.18) 0px -1px 0px inset;
+}        
