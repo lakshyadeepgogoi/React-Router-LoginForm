@@ -8,10 +8,10 @@ function Template({title,desc1, desc2, image, formtype, setIsLoggedIn}) {
     // console.log("form type");
     // console.log(formtype);
   return (
-    <div className='flex w-11/12 max-w-[1160px] py-12 mx-auto gap-x-12 ga-y-0 justify-between'>
+    <div className='flex justify-between w-11/12 max-w-[1160px] mx-auto py-12 flex-col-reverse gap-y-12 md:gap-y-0 md:gap-x-12 md:flex-row'>
 
 
-        <div className='w-11/12 max-w-[450px]'>
+        <div className='w-11/12 max-w-[450px] mx-auto md:mx-0'>
             <h1 
             className='text-richblack-5 font-semibold text-[1.875rem]  leading-[2.375rem]'
             >
@@ -45,12 +45,13 @@ function Template({title,desc1, desc2, image, formtype, setIsLoggedIn}) {
 
         </div>
 
-        <div className='relative w-11/12 max-w-[450px] '>
+        <div className='relative w-11/12 max-w-[450px] mx-auto md:mx-0 '>
             <img src={frameImage}
             alt='Pattern'
-            width={558}
-            height={504}
-            loading='lazy'/>
+            
+            loading='lazy'
+            className='h-[22rem] w-[100%]'
+            />
 
 
             <img src={image}
@@ -58,7 +59,7 @@ function Template({title,desc1, desc2, image, formtype, setIsLoggedIn}) {
             width={558}
             height={508}
             loading='lazy'
-            className='absolute -top-4 right-4 h-[80%]'
+            className='absolute -top-4 right-4 h-[22rem] '
             
             
             />
